@@ -89,7 +89,7 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("Usuario autenticado:", user.email);
     } else {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }
 });
 
@@ -97,7 +97,7 @@ document.getElementById('logout-btn').addEventListener('click', async () => {
     showLoading();
     await signOut(auth);
     hideLoading();
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 });
 
 // 5. Lógica del CRUD (Crear, Leer, Actualizar, Borrar)
